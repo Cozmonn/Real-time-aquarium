@@ -1,0 +1,50 @@
+/* Body and Tank Styles */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: url('./assets/msvbD85.jpeg') no-repeat center center;
+    background-size: cover;
+  }
+  
+  #tank {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* Fish School Styles */
+  .school {
+    position: absolute;
+    transform: translate(0, 0);
+  }
+  
+  /* Fish Styles */
+  .fish {
+    position: absolute;
+    transition: transform 5s ease-in-out, opacity 2s;
+    font-size: 30px;
+  }
+  
+  /* Dead Fish Animation */
+  .fish.dead {
+    opacity: 0; /* Fades out */
+    transform: rotate(90deg) translateY(50px); /* Rotates and drops */
+  }
+  
+  /* Status Indicator */
+  #status-indicator {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+    border-radius: 8px;
+  }
+  
+  

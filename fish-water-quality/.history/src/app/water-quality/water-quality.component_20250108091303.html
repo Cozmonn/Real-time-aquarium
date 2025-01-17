@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Water Quality Check for Fishes</h1>
+    <form (ngSubmit)="checkWaterQuality()">
+      <label>
+        pH:
+        <input type="number" [(ngModel)]="ph" name="ph" required />
+      </label>
+      <br>
+      <label>
+        Temperature (°C):
+        <input type="number" [(ngModel)]="temperature" name="temperature" required />
+      </label>
+      <br>
+      <label>
+        Dissolved Oxygen (mg/L):
+        <input type="number" [(ngModel)]="dissolvedOxygen" name="dissolvedOxygen" required />
+      </label>
+      <br><br>
+      <button type="submit">Check Water Quality</button>
+    </form>
+    <h2>{{ waterQualityMessage }}</h2>
+  </div>
+  
